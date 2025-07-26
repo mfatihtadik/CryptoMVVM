@@ -12,11 +12,13 @@ import com.mftadik.cryptoappmvvm.R
 import com.mftadik.cryptoappmvvm.adapter.CryptoAdapter
 import com.mftadik.cryptoappmvvm.model.CryptoModel
 import com.mftadik.cryptoappmvvm.viewmodel.CryptoViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var cryptoAdapter: CryptoAdapter
